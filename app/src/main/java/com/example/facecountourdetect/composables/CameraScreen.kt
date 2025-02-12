@@ -33,7 +33,6 @@ import java.util.concurrent.Executors
 fun CameraScreen() {
     val lifecycleOwner = LocalLifecycleOwner.current
 
-
     var previewWidth by remember { mutableStateOf(0) }
     var previewHeight by remember { mutableStateOf(0) }
     var viewWidth by remember { mutableStateOf(0) }
