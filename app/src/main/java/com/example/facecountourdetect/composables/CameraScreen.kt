@@ -46,7 +46,7 @@ fun CameraScreen() {
     val options = FaceDetectorOptions.Builder()
         .setPerformanceMode(FaceDetectorOptions.PERFORMANCE_MODE_FAST) // высокая точность распознавания
         .setContourMode(FaceDetectorOptions.CONTOUR_MODE_ALL) //  распознавание всех контуров лица
-        .setLandmarkMode(FaceDetectorOptions.LANDMARK_MODE_ALL) // Распознавание ключевых точек (глаза, нос, рот)
+        .setLandmarkMode(FaceDetectorOptions.LANDMARK_MODE_ALL) // распознавание ключевых точек (глаза, нос, рот)
         .build()
 
     // создаем клиент для распознавания лиц

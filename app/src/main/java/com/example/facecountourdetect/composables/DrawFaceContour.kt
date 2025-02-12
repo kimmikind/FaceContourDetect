@@ -39,9 +39,6 @@ fun DrawFaceContour(
         val offsetX = (viewWidth - imageWidth * scale) / 2
         val offsetY = (viewHeight - imageHeight * scale) / 2
 
-        // Корректировка смещения (если требуется)
-        //val correctionValue = 50f // Подберите это значение экспериментально
-       // val adjustedOffsetY = offsetY - correctionValue
 
         Log.d("CameraPreview", "Preview dimensions: $previewWidth x $previewHeight")
         Log.d("CameraPreview", "View dimensions: $viewWidth x $viewHeight")
@@ -70,7 +67,6 @@ fun DrawFaceContour(
 
             // Рисуем контуры лица (опционально)
             face.getContour(FaceContour.FACE)?.points?.forEach { point ->
-                Log.d("FaceDetection", "Contour point: (${point.x}, ${point.y})")
                 drawCircle(
 
                     color = Color.Green,
